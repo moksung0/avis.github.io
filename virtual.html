@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상회원 전용 페이지</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f2f2f7;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        .card {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+            animation: fadeIn 0.8s ease;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 26px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .email-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #4a6cf7;
+            color: white;
+            font-size: 18px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .email-btn:hover {
+            background: #3855cc;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>가상회원 전용 페이지입니다</h2>
+        <p>회원가입 신청을 메일로 보내주세요</p>
+
+        <!-- 이메일 바로 열기 -->
+        <a class="email-btn" href="mailto:moksung0@gmail.com">이메일 보내기</a>
+    </div>
+
+</body>
+</html>

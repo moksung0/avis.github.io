@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AVIS</title>
+  <title>AVIS 연구소</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,42 +13,68 @@
       background: #f5f5f5;
     }
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 50px 20px 40px;
       background: white;
     }
     h1 {
       font-size: 40px;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
     .subtitle {
       font-size: 16px;
       color: #444;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
+
+    /* 카드형 메뉴 */
     .menu {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-bottom: 40px;
-      font-size: 15px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-bottom: 60px;
     }
     .menu a {
+      display: block;
+      padding: 26px 20px;
+      background: #f9fafb;
+      border-radius: 16px;
       text-decoration: none;
-      color: black;
-      font-weight: 500;
+      color: #111;
+      font-weight: bold;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
     }
+    .menu a span {
+      display: block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: normal;
+      color: #666;
+    }
+    .menu a:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+      background: #eef2ff;
+      color: #1d4ed8;
+    }
+
     .footer {
       margin-top: 40px;
-      font-size: 16px;
+      font-size: 15px;
       color: #333;
-      line-height: 1.8;
+      line-height: 1.9;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 30px;
     }
     .footer a {
       color: #2a4adf;
       text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -56,28 +82,26 @@
   <div class="container">
 
     <h1>AVIS 연구소</h1>
-    <div class="subtitle">당신의 안전한 해외선물 파트너, AVIS 해외선물투자시스템에 오신것을 환영합니다</div>
+    <div class="subtitle">
+      당신의 안전한 해외선물 파트너,<br />
+      AVIS 해외선물투자시스템에 오신 것을 환영합니다
+    </div>
 
     <div class="menu">
-      <a href="abroad_page.html">해외지원거래소</a>
-      <a href="virtual_page.html">가상회원</a>
-      <a href="investment_page.html">투자회원</a>
-      <a href="system_page.html">시스템후원</a>
-      <a href="org_chart.html">조직도</a>
-      <a href="internal_page.html">대한민국 대표 가상자산 거래소 </a>
-      
+      <a href="profile_rsp.html">RSP 프로필<span>대표 시스템 플래너 · 최정원</span></a>
+      <a href="abroad_page.html">해외 지원 거래소<span>연동 해외 거래소 안내</span></a>
+      <a href="virtual_page.html">가상 회원<span>체험 및 테스트 계정</span></a>
+      <a href="investment_page.html">투자 회원<span>실거래 투자 프로그램</span></a>
+      <a href="system_page.html">시스템 후원<span>AVIS 시스템 후원 안내</span></a>
+      <a href="org_chart.html">조직도<span>AVIS 운영 구조</span></a>
+      <a href="internal_page.html">대한민국 대표 가상자산 거래소<span>국내 주요 가상자산 거래소 안내</span></a>
     </div>
 
     <div class="footer">
-      <div style="font-weight: bold; margin-bottom: 40px;">대표 시스템플래너 RSP   최 정 원</div>
-      
+      <div style="font-weight:bold; font-size:16px; margin-bottom:30px;">대표 시스템 플래너 RSP · 최정원</div>
       📱 Mobile: 010-4243-3087<br />
-      <a href="mailto:moksung0@gmail.com?subject=문의드립니다&body=여기에 내용을 입력하세요">
-    이메일 보내기
-</a>
-
-      ✉ Email: moksung0@gmail.com<br />
-      <a href="https://moksung0.github.io/avis">https://moksung0.github.io/avis</a><br /><br />
+      ✉ <a href="mailto:moksung0@gmail.com?subject=문의드립니다&body=여기에 내용을 입력하세요">이메일 보내기</a><br />
+      🌐 <a href="https://moksung0.github.io/avis">https://moksung0.github.io/avis</a><br /><br />
       © 2025 AVIS. All Rights Reserved.<br />
       Abroad Virtual Investment System.
     </div>
@@ -85,56 +109,3 @@
   </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
